@@ -5,17 +5,16 @@ window = tk.Tk()
 
 
 def play_sound():
-    # data = "Whatever"
     engine = pyttsx3.init()
     engine.say(entry.get())
     engine.runAndWait()
     entry.delete(0, "end")
 
 
-window.title("I PLAY POKEMON GO EVERYDAY")
+window.title("Play Sound")
 frame = tk.Frame(window)
 
-label = tk.Label(frame, text="ENTER YOR CREDIT CARD INFO")
+label = tk.Label(frame, text="Enter a phrase")
 label.pack()
 
 entry = tk.Entry(frame, width=50)
